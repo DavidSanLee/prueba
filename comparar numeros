@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 27 13:27:02 2019
+
+@author: TRIQU
+"""
+
+#Determinar cual de 3 numeros es mayor
+
+a = int(input("Ingrese el primer numero: "))
+b = int(input("Ingrese el segundo numero: "))
+c = int(input("Ingrese el tercer numero: "))
+
+if (a > b and a > c):
+    
+    print("El primero numero es el mayor ", a)
+    
+elif (b > a and b > c):
+    print("El segundo  numero es el mayor ", b)
+    
+elif (c > b and c > a):
+    print("El tercero numero es el mayor ", c)
+    
+elif ((a == b) and (b != c)):
+    print("El primer y segundo numero son iguales ",a)
+    
+elif ((a == c) and (c != b)):
+    print("El segundo y tercero numero son iguales ",c)
+        
+elif ((b == c) and (c != a)):
+    print("El segundo y tercer numero son iguales ",b)
+    
+elif ((a == b) and (b == c)):
+    print("Todos los numeros son iguales ",b)
