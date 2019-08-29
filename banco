@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 22 15:37:26 2019
+
+@author: TRIQU
+"""
+
+# calcular la cantidad y denominacion de billetes y monedas, al retirar dinero de un cajero que tambien dispone de monedas
+
+print("En cuestion de centavos solo se daran monadas de 50 centavos en adelante")
+
+a = float(input("Ingrese la cantidad que desea retirar "))
+
+if a >= 1000.0:
+    b = a/1000
+    print(int(b)," billetes de 1000 pesos")
+    #resultante despues de los billetes de 1000
+    c = float(a % 1000)
+    print(c)
+    
+if c >= 500:
+    
+    d = c/500
+    print(int(d),"billetes de 500 pesos")
+    #resultante despues de los billetes de 500
+    e = float( c % 500)
+    print(e)
+    
+if e >= 200:
+    
+    f = e/200
+    print(int(f),"billetes de 200 pesos")
+    g = float( e % 200)
+    print(g)
+
+if g >= 100:
+    h = g/100
+    print(int(h),"billetes de 100 pesos")
+    n = float( g % 100)
+    print(n)
+if n >= 50:
+    m = n/50
+    print(int(m),"billetes de 50 pesos")
+    o = float( n % 50)    
+    
+    print(n)
+    print(m)
+    print(o)
+    
+if o >= 20:
+    p = o/20
+    print(int(p),"billetes de 20 pesos")
+    q = float( o % 20)   
+    print(q)
+    
+if q >= 10:
+    r = q/10
+    print(int(r),"monedas de 10 pesos")
+    s = float( q % 10)  
+    print(s)
+    
+if s >= 5:
+    t = s/5
+    print(int(t),"monedas de 5 pesos")
+    u = float( s % 5) 
+    print(u)
+        
+if u >= 2:
+    v = u/2
+    print(int(v),"monedas de 2 pesos")
+    w = float( u % 2)    
+    print(w)
+    
+if w >= 1:
+    x = w/1
+    print(int(x),"monedas de 1 peso")
+    y = float( w % 1) 
+    print(y)
+    
+if y == 0.5:
+    z = 1
+    print(int(z),"monedas de 50 centavos")
